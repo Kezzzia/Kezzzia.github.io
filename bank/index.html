@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bank/style.css">
+    <script src="../bank/main.js"></script>
+</head>
+<body>
+        <a onclick="viewUserForm()" class="glitch-btn" href="#">
+                <div class="text">Sign up for free</div>
+                    <div class="mask">
+                        <span>Sign up for free</span>
+                    </div>
+               </div>
+            </a>
+    <div id="user__form">
+        <div class="form__wrapper">
+            <form action="" name="test" id="form">
+                <label for="user__name">First Name:</label>
+                <input type="text" name="user__name" placeholder="..." id="user__name"><br>
+
+                <label for="user__lastname">Last Name:</label>
+                <input type="text" name="user__lastname" placeholder="..." id="user__lastname"><br>
+
+                <label for="user__gender">Specify your gender:</label>
+                <input type="text" name="user__gender" placeholder="..." id="user__gender"><br>
+
+                <label for="user__age">Your age:</label>
+                <input type="text" name="user__age" placeholder="..." id="user__age"><br>
+
+                <label for="user__weight">Weight:</label>
+                <input type="text" name="user__weight" placeholder="..." id="user__weight"><br>
+
+                <label for="user__growth">Growth:</label>
+                <input type="text" name="user__growth" placeholder="..." id="user__growth"><br>
+
+                <span>Are you married?</span>
+                <input type="radio" name="user__married" id="user__married" value="Yes">
+                <label>Yes</label>
+                <input type="radio" name="user__married" id="user__married" value="No">
+                <label>No</label><br>
+
+                <span>Do you have children?</span>
+                <input type="radio" name="user__havingchildren" id="user__havingchildren" value="Yes">
+                <label>Yes</label>
+                <input type="radio" name="user__havingchildren" id="user__havingchildren" value="No">
+                <label>No</label><br>
+
+                <div id="user__childrenQuantity">
+                    <label for="user__childrenQuantity">How many kids do you have:</label>
+                    <input type="text" name="user__childrenQuantity" placeholder="..." ><br>
+                </div>
+                <div id="user__childrenNames">
+                    <label for="user__childrenNames">Write the names of your children:</label>
+                    <input type="text" name="user__childrenNames" placeholder="..." ><br>
+                </div>
+
+                <input type="button" name="submit" onclick="valid(document.getElementById('form'))" value="send">
+
+            </form>
+            <div id="information_output">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
