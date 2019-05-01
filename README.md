@@ -1,2 +1,2 @@
 # Hello
-[Design-project] (Kezzzia.github.io/Srarting Pack 2/Index.html)
+[Design-project] (https://kezzzia.github.io/Srarting%20Pack%202/Index.html)
