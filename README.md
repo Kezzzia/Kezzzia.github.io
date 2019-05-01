@@ -1,2 +1,2 @@
 # Hello
-!(Kezzzia.github.io/Srarting Pack 2/Index.html)
+(Kezzzia.github.io/Srarting Pack 2/Index.html)
