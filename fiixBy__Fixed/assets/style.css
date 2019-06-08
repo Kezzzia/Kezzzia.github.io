@@ -99,7 +99,7 @@ header {
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
-    background: url(/fiixBy__Fixed/img/header8.jpg);
+    background: url(../img/header8.jpg);
     background-size: cover;
 }
 .header__main-opacity {
