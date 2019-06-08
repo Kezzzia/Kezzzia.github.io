@@ -198,7 +198,7 @@ section {
     justify-content: space-around;
 }
 .wrapper__repair-img {
-    background: url(/Users/admin/Desktop/fiixBy__Fixed/img/main1.jpg);
+    background: url(../img/main1.jpg);
     background-size: cover;
     height: 100vh;
     width: 50%;
@@ -232,7 +232,7 @@ section {
 
 /* ---------section #2---- */
 .wrapper__accessories-img {
-    background: url(/Users/admin/Desktop/fiixBy__Fixed/img/main2.jpg);
+    background: url(../img/main2.jpg);
     background-size: cover;
     height: 100vh;
     width: 50%;
@@ -248,7 +248,7 @@ section {
 /* ---------section #3---- */
 
 .main__info-user {
-    background: url(/Users/admin/Desktop/fiixBy__Fixed/img/main6.jpg);
+    background: url(../img/main6.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
