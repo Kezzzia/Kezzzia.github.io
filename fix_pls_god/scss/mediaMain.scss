@@ -7,20 +7,22 @@
 @media (max-width:576px){
     .intro__text .intro__main--button{
         display: none;
+
     }
-    .intro__text h1{
-        font-size: 20px;
+    .intro__text {
+        align-items: center;
+        min-height: 200px;
+        text-align: center;
+        width: 270px;
+        span{
+            width: 250px;
+        }
+        h1{
+            font-size: 25px;
+        }
     }
-
-
-
-
-
     .intro__wrapper{
         flex-direction: column;
-    }
-    .intro__text{
-        min-height: 300px;
     }
     .intro__wrapper{
         max-height: 400px;
@@ -31,21 +33,26 @@
     .main__block--wrapper div{
         width: 320px;
     }
+// ///////////
 
 
 //////////////
     .price{
-        min-height: 800px;
+        min-height: 700px;
     }
     .price__wrapper{
         min-height: 590px;
+        span{
+            margin-bottom: 20px;
+        }
         h2{
             padding-bottom: 15px;
         }
     }
     .price__footer{
         flex-direction: column;
-        min-height: 160px;
+        min-height: 220px;
+        background-color: #504C58;
     }
     .price__about{
         min-height: 140px;
@@ -90,7 +97,7 @@
         flex-direction: column;
         min-height: 900px;
         div{
-            min-width: 310px;
+            min-width: 290px;
             margin-bottom: 10px;
         }
     }

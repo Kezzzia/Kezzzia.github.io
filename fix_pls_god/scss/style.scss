@@ -120,8 +120,9 @@ nav {
 
 }
 .intro__wrapper {
+    margin-top: 90px;
     width: 85%;
-    height: 75%;
+    height: 60%;
     display: flex;
     justify-content: space-between;
 }
@@ -129,10 +130,10 @@ nav {
     @include flex__column;
     span {
         color: #fff;
-        font-size: 2.4vw;
+        // font-size: 2.2vw;
     }
     h1 {
-        font-size: 3.4vw;
+        // font-size: 3.6vw;
         color: #D4E1F4;
         margin: 0;
     }
@@ -204,15 +205,17 @@ nav {
     }
 }
 .main__block--wrapper{
-    height: 80%;
+    height: 60%;
     width:90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    // justify-content: space-between;
+    margin-bottom: 70px;
     div{
         display: flex;
         justify-content: space-around;
         div{
+            padding: 0 0 20px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
