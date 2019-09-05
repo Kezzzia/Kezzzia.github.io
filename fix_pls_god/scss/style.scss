@@ -94,6 +94,7 @@ nav {
     }
     a:first-child{
         margin-top: -20px;
+        width: 1px;
     }
     a:hover{
         color: #D4E1F4;
@@ -109,6 +110,11 @@ nav {
         color: #D4E1F4;
     }
 }
+
+////media....................................................................................
+
+////media....................................................................................
+
 // intro
 // ==========================================================================================
 .intro {
@@ -130,12 +136,12 @@ nav {
     @include flex__column;
     span {
         color: #fff;
-        // font-size: 2.2vw;
+        font-size: 2.2vw;
     }
     h1 {
-        // font-size: 3.6vw;
+        font-size: 3.6vw;
         color: #D4E1F4;
-        margin: 0;
+        margin: 0;   
     }
     .intro__main--button {
         width: 300px;
@@ -177,6 +183,50 @@ nav {
         background-color: #FE9C55;
     }
 }
+////media....................................................................................
+@media (max-width:768px){
+    .nav__container ul li a{
+        font-size: 12px;
+    }
+    .intro__text{ 
+        align-items: center;
+        min-height: 350px;
+        text-align: center;
+        width: 410px;
+    h1{
+        font-size: 35px;
+    }
+    span{
+        font-size: 25px;
+    }
+    }
+    .intro__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro__main--button{
+        display: none;
+    }
+    .intro__social{
+        flex-direction: unset;
+        width: 200px;
+    }
+}
+@media (max-width:567px){
+    .intro__text{ 
+        min-height: 250px;
+        width: 310px;
+    h1{
+        font-size: 25px;
+    }
+    span{
+        font-size: 15px;
+        width: 260px;
+    }
+}
+}
+////media....................................................................................
+
 // main
 // ==========================================================================================
 .main {
@@ -399,24 +449,20 @@ nav {
 .reviews{
     width: 100%;
     max-width: 1440px;
-    // max-height: 700px;
     height: 100vh;
     @include flex__center;
     .reviews__wrapper{
-        width: 90%;
-        height: 490px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
+        div{
+            flex-basis: 400px;
+        }
         h2 {
-            width: 78%;
-            padding: 0;
             color: #E1680F;
-            font-size: 25px;
-            text-align: start;
-            font-weight: 400;
+            // font-weight: 400;
             margin-bottom: 50px;
+            margin-right: 55%;
         }
         a{
             @include links;
@@ -434,7 +480,8 @@ nav {
     display: flex;
     justify-content: space-between;
     div{
-        width: 30%;
+        flex-basis: 500px;
+        margin: 20px 20px 0 20px;
         box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
         div{
             box-shadow: none;

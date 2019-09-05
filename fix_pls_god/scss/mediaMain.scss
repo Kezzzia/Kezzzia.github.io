@@ -5,37 +5,6 @@
 ////Phone display 576px - 0////
 /////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width:576px){
-    .intro__text .intro__main--button{
-        display: none;
-
-    }
-    .intro__text {
-        align-items: center;
-        min-height: 200px;
-        text-align: center;
-        width: 270px;
-        span{
-            width: 250px;
-        }
-        h1{
-            font-size: 25px;
-        }
-    }
-    .intro__wrapper{
-        flex-direction: column;
-    }
-    .intro__wrapper{
-        max-height: 400px;
-    }
-    .intro__social{
-        flex-direction: none;
-    }
-    .main__block--wrapper div{
-        width: 320px;
-    }
-// ///////////
-
-
 //////////////
     .price{
         min-height: 700px;
@@ -92,6 +61,11 @@
 //////////////
     .reviews{
         min-height: 1100px;
+    }
+    .reviews__wrapper{
+        h2{
+            margin-left: 50px;
+        }
     }
     .reviews__block--wrapper{
         flex-direction: column;
@@ -168,18 +142,18 @@
     .main{
         min-height: 1000px;
     }
-    .nav__container{
-    a.links{
-        font-size: 11px;
-    }
-    ul{
-        li{
-            a{
-                font-size: 11px;
-            }
-        }
-    }
-    }
+    // .nav__container{
+    // a.links{
+    //     font-size: 11px;
+    // }
+    // ul{
+    //     li{
+    //         a{
+    //             font-size: 11px;
+    //         }
+    //     }
+    // }
+    // }
     .price__text {
         h4{
             font-size: 11px;
@@ -195,7 +169,13 @@
     }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
-
+// @media (min-width: 993px){
+//     .intro__text{
+//         h1{
+//             font-size: 50px;
+//         }
+//     }
+// }
 
 ///4k display////
 ////////////////////////////////////////////////////////////////////////////////////////////
