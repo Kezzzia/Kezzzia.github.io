@@ -17,8 +17,14 @@ function init(){
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
-    x.classList.toggle("responsive");
+	x.classList.toggle("responsive");
+  	// document.body.style.overflow = 'hidden'; 
 }
+// function closeMenuItem() {
+// 	var z = document.getElementsByClassName("responsive");
+// 	z.close();
+// 	document.body.style.overflow = ''; // Восстанавливаем прокрутку
+//   }
 
 
 document.getElementById('close__nav-main').onclick = function() {
@@ -39,3 +45,6 @@ document.getElementById('close__nav-reviews').onclick = function() {
 document.getElementById('close__nav-footer').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
 }
+// window.addEventListener('scroll', (e) => {
+// 	window.scrollTo(0,0);
+//   });

@@ -43,7 +43,6 @@
 @media (max-width:992px){
     .nav__container a{
         margin-top: 20px;
-        margin-left: 20px;
     }
     .phone--number{visibility: hidden;}
     ul.topnav li {display: none;}
@@ -91,7 +90,7 @@
     }
     //
     .reviews{
-        min-height: 1480px;
+        min-height: 1580px;
     }
     .reviews__block--wrapper{
         flex-wrap: wrap;
@@ -105,6 +104,12 @@
         span{
             padding: 35px;
         }
+    }
+    .footer__info--mobile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 50px;
     }
 }
 

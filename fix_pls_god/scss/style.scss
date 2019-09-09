@@ -71,7 +71,7 @@ header {
 // navigation
 // ==========================================================================================
 .nav__container {
-    width: 100%;
+    min-width: 85%;
     height: 60px;
     background-color: #504C58;
     display: flex;
@@ -91,7 +91,6 @@ ul.topnav {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 ul.topnav{
     li a {
@@ -119,7 +118,7 @@ ul.topnav{
     color: #D4E1F4;
     text-decoration: none;
     list-style-type: none;
-    font-size: 30px;
+    // font-size: 30px;
     margin-right: 15px;
 }
 .responsive{
@@ -129,7 +128,7 @@ ul.topnav{
     position: absolute;
     top: 50px;
     transition: 0.3s;
-    z-index: 2600;
+
 }
 // intro
 // ==========================================================================================
@@ -141,9 +140,9 @@ ul.topnav{
 
 }
 .intro__wrapper {
-    margin-top: 90px;
+    // margin-top: 90px;
     width: 85%;
-    height: 60%;
+    height: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -154,10 +153,12 @@ ul.topnav{
     }
     h1 {
         color: #D4E1F4;
+        margin: 0;
     }
     .intro__main--button {
         width: 300px;
         height: 60px;
+        margin-top: 30px;
         outline: none;
         font-size: 21px;
         font-weight: 200;
@@ -300,7 +301,7 @@ ul.topnav{
             border-bottom: none;
             @include links;
             color: #C4C4C4;
-            font-size: 25px;
+            font-size: 22px;
             &:nth-child(5){
                 border-bottom: 1px solid #46434C;
             }
@@ -330,12 +331,13 @@ ul.topnav{
     justify-content: space-between;
     button{
         font-size: 20px;
+        margin-top:20px;
         border: 1px solid #FE9C55;
         color: #fff;
         background: none;
         border-radius: 50px;
         width: 250px;
-        height: 40px;
+        height: 50px;
         font-weight: 300;
         &:hover{
             color: #000000;
@@ -349,36 +351,36 @@ ul.topnav{
 // ==========================================================================================
 .service{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: #D4E1F4;
     @include flex__center;
 }
 .service__wrapper{
     margin-top: 35px;
     height: 95%;
+    width: 85%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     h2 {
         color: #504C58;
-        font-weight: 400;
-        padding: 15px;
+        margin-top: 55px;
     }
 }
 .service__block--wrapper{
     width: 100%;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-around;
     .service__block{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 20px 20px 30px 20px;
+        margin: 20px 10px 30px 10px;
     }
 }
 .service__block{
-    box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
+    box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.2);
     div:first-child{
         margin-top: -60px;
     }
@@ -401,10 +403,10 @@ ul.topnav{
     }
     p{
         color: #504C58;
-        padding: 10px;
+        padding: 25px;
         font-weight: 300;
-        text-align: center;
-
+        // text-align: center;
+        line-height: 20px;
     }
     img{
         height: 110px;
@@ -414,24 +416,27 @@ ul.topnav{
 // ==========================================================================================
 .reviews{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     @include flex__center;
     .reviews__wrapper{
-        margin-top: 35px;
-        height: 95%;
+        margin-top: 55px;
+        height: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         h2 {
+            width: 85%;
             color: #E1680F;
-            font-weight: 400;
-            padding: 20px;
+            // margin-top: 55px;
+            text-align: left;
         }
         a{
             @include links;
             color: #E1680F;
-            margin-bottom: 15px;
+            width: 85%;
+            text-align: left;
+            margin-bottom: 40px;
         }
         a:hover{
             color: #504C58;
@@ -439,12 +444,12 @@ ul.topnav{
     }
 }
 .reviews__block--wrapper{
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     div{
-        margin: 20px 20px 20px 20px;
-        box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
+        margin: 20px 10px 20px 10px;
+        box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.15);
         div{
             box-shadow: none;
             display: flex;
@@ -470,25 +475,27 @@ ul.topnav{
         margin-left: 20px;
         margin-top: -50px;
     }
+
 }
 // footer
 // ==========================================================================================
 .footer{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     @include flex__center;
     background-color: #504C58;    
 }
 .footer__wrapper{
-    margin-top: 35px;
-    width: 95%;
-    height: 85%;
+    // margin-top: 35px;
+    width: 85%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     div:nth-child(2){
         .footer__contact{
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -576,19 +583,18 @@ ul.topnav{
         }
     }
     h2 {
-        width: 78%;
-        padding: 0;
+        width: 100%;
         color: #D4E1F4;
-        font-size: 25px;
-        text-align: start;
-        font-weight: 400;
-        margin: 0;
+        text-align: left;
     }
 }
 .footer_wrapper--contacts{
     display: flex;
-    height: 70%;
-    width: 90%;
+    height: 60%;
+    width: 100%;
     background-color: #504C58;
     box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
+}
+.social__item--footer{
+    fill: #D4E1F4;
 }
