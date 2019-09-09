@@ -82,7 +82,7 @@
     }
     //
     .service{
-        min-height: 1970px;
+        min-height: 2070px;
     }
     .service__block--wrapper{
         flex-wrap: wrap;
@@ -99,6 +99,9 @@
     //
     .footer{
         min-height: 1200px;
+    }
+    .footer__contact{
+        min-height: 350px;
     }
     .footer__contact--text{
         span{
