@@ -31,6 +31,9 @@
         font-size: 2.2vw;
     }
     }
+    .call a{
+        display: none;
+    }
 }
 @media (min-width:992px){
     .icon{
@@ -41,9 +44,6 @@
     }
 }
 @media (max-width:992px){
-    .nav__container a{
-        margin-top: 20px;
-    }
     .phone--number{visibility: hidden;}
     ul.topnav li {display: none;}
     ul.topnav li.icon {top: 0; right: 0; display: inline-block;}
@@ -82,7 +82,7 @@
     }
     //
     .service{
-        min-height: 2070px;
+        min-height: 1970px;
     }
     .service__block--wrapper{
         flex-wrap: wrap;
@@ -90,7 +90,7 @@
     }
     //
     .reviews{
-        min-height: 1580px;
+        min-height: 1790px;
     }
     .reviews__block--wrapper{
         flex-wrap: wrap;

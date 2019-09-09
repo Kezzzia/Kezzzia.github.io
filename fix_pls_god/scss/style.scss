@@ -68,6 +68,19 @@ header {
         position: fixed;
     }
 }
+.call{
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    a{
+        background: url(../img/icons/call.svg);
+        height: 70px;
+        width: 70px;
+    }
+}
 // navigation
 // ==========================================================================================
 .nav__container {
