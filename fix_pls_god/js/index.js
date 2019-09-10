@@ -14,6 +14,9 @@ function init(){
 
 	map.geoObjects.add(placemark);
 }
+
+
+/////////////////////////////---HOME
 // функция которая меняет классы при открытии адаптивного меню
 function myFunction() {
 	var y = document.getElementById("responsive__mobile");
@@ -38,6 +41,35 @@ function openModalThanks(){
 	document.getElementById("footer__close--modal").style.display = "block";
 	document.getElementById("modalOrder").style.display = "none";
 }
+// блок где я забыл что делает - но работает
+document.getElementById('close__nav-main').onclick = function() {
+	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
+}
+document.getElementById('close__nav-about').onclick = function() {
+	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
+}
+document.getElementById('close__nav-price').onclick = function() {
+	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
+}
+document.getElementById('close__nav-service').onclick = function() {
+	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
+}
+document.getElementById('close__nav-reviews').onclick = function() {
+	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
+}
+document.getElementById('close__nav-footer').onclick = function() {
+	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
+}
+/////////////////////////////
+
+
+/////////////////////////////---REWIEWS
 // функция которая перелистывает страницы в отзывах
 function scrollRewiews(){
 	document.getElementById("rewiewsFirstPage").style.display = "none";
@@ -65,31 +97,30 @@ function rewiewsOpenModalThanks(){
 function rewiewsCloseFooterSend(){
 	document.getElementById("reviews__modal--thanks").style.display="none";
 }
+/////////////////////////////
+
+
+/////////////////////////////---PRICE
+// функция которая вызывает модальное окно (price)
+function priceOrderCall(){
+	document.getElementById("priceModalOrder").style.display = "block";
+}
+// функия которая закрывает меню отправки заявок на сайт (price)
+function priceFooterSend(){
+	document.getElementById("priceModalOrder").style.display="none";
+}
+// функция которая после отправки формы выводит меню и благодарит клиента (price)
+function priceOpenModalThanks(){
+	document.getElementById("price__close--modal").style.display = "block";
+	document.getElementById("priceModalOrder").style.display = "none";
+}
+// функция которая возвращает на главную страницу после закрытия модального окна отзывов(price)
+function priceCloseSend(){
+	document.getElementById("price__close--modal").style.display="none";
+}
+//////////////////////////////
 
 
 
 
-document.getElementById('close__nav-main').onclick = function() {
-	document.getElementById('myTopnav').classList.remove('responsive');
-	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
-}
-document.getElementById('close__nav-about').onclick = function() {
-	document.getElementById('myTopnav').classList.remove('responsive');
-	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
-}
-document.getElementById('close__nav-price').onclick = function() {
-	document.getElementById('myTopnav').classList.remove('responsive');
-	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
-}
-document.getElementById('close__nav-service').onclick = function() {
-	document.getElementById('myTopnav').classList.remove('responsive');
-	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
-}
-document.getElementById('close__nav-reviews').onclick = function() {
-	document.getElementById('myTopnav').classList.remove('responsive');
-	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
-}
-document.getElementById('close__nav-footer').onclick = function() {
-	document.getElementById('myTopnav').classList.remove('responsive');
-	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
-}
+

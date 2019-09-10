@@ -23,6 +23,10 @@
     .footer__button{
         display: none;
     }
+    .price__btn--call{
+        display: none;
+    }
+    //
 
 }
 @media (min-width:568px){
@@ -50,6 +54,13 @@
     }
 }
 @media (max-width:992px){
+    //
+    .price__questions{
+        text-align: center;
+    }
+    .price__btn--call{
+        text-align: center;
+    }
     // 
     .sendReview{
         text-align: center;
