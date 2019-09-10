@@ -14,37 +14,47 @@ function init(){
 
 	map.geoObjects.add(placemark);
 }
-
+// функция которая меняет классы при открытии адаптивного меню
 function myFunction() {
+	var y = document.getElementById("responsive__mobile");
     var x = document.getElementById("myTopnav");
 	x.classList.toggle("responsive");
-  	// document.body.style.overflow = 'hidden'; 
+	y.classList.toggle("mobile__nav--responsive");
 }
-// function closeMenuItem() {
-// 	var z = document.getElementsByClassName("responsive");
-// 	z.close();
-// 	document.body.style.overflow = ''; // Восстанавливаем прокрутку
-//   }
-
+// функия которая закрывает меню отправки заявок на сайт
+function closeFooterSend(){
+	document.getElementById("footer__close--modal").style.display="none";
+}
+// функция которая вызывает модальное окно
+function footerOrderCall(){
+	document.getElementById("modalOrder").style.display = "block";
+}
+// функция которая закрывает основное модальное окно
+function closeModalWindow(){
+	document.getElementById("modalOrder").style.display = "none";
+}
 
 document.getElementById('close__nav-main').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
 }
 document.getElementById('close__nav-about').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
 }
 document.getElementById('close__nav-price').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
 }
 document.getElementById('close__nav-service').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
 }
 document.getElementById('close__nav-reviews').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
 }
 document.getElementById('close__nav-footer').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
+	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
 }
-// window.addEventListener('scroll', (e) => {
-// 	window.scrollTo(0,0);
-//   });

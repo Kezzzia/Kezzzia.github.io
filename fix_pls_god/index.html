@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../fix_pls_god/css/style.css"> 
     <title>Fiix.by- Ремонт телефонов</title>
 </head>
-<body>
+<body class="no-scroll">
 <!-- SVG SPRITE -->
     <svg style="display:none;">
         <symbol id="facebook" viewBox="0 0 40 40">
@@ -38,19 +38,31 @@
         <div class="call">
             <a href="tel:+375 (29) 166 52 00"></a>
         </div>
+        <div class="mobile__nav" id="responsive__mobile">
+                <ul class="topnav" id="myTopnav"> 
+                        <li><a id="close__nav-main" onclick="closeMenuItem()" href="#" class="active">Главная</a></li>
+                        <li><a id="close__nav-about" onclick="closeMenuItem()" href="#about__anchor">О нас</a></li>
+                        <li><a id="close__nav-price" onclick="closeMenuItem()" href="#price__anchor">Цены</a></li>
+                        <li><a id="close__nav-service" onclick="closeMenuItem()" href="#service__anchor">Схема работы</a></li>
+                        <li><a id="close__nav-reviews" onclick="closeMenuItem()" href="#reviews__anchor">Отзывы</a></li>
+                        <li><a id="close__nav-footer" onclick="closeMenuItem()" href="#footer__anchor">Контакты</a></li>
+                        <a class="links phone--number" href="tel:+375 (29) 166 52 00">+375(29)166 52 00</a> 
+                    </ul>
+            <a class="x"  href="javascript:void(0);" onclick="myFunction()"></a>
+        </div>
+
         <div class="nav__wrapper">
         <nav class="nav__container">
             <a href="#"><img src="../fix_pls_god/img/icons/logo.svg"></a> 
-            <ul class="topnav" id="myTopnav"> 
-                <li><a id="close__nav-main" onclick="closeMenuItem()" href="#" class="active">Главная</a></li>
-                <li><a id="close__nav-about" onclick="closeMenuItem()" href="#about__anchor">О нас</a></li>
-                <li><a id="close__nav-price" onclick="closeMenuItem()" href="#price__anchor">Цены</a></li>
-                <li><a id="close__nav-service" onclick="closeMenuItem()" href="#service__anchor">Схема работы</a></li>
-                <li><a id="close__nav-reviews" onclick="closeMenuItem()" href="#reviews__anchor">Отзывы</a></li>
-                <li><a id="close__nav-footer" onclick="closeMenuItem()" href="#footer__anchor">Контакты</a></li>
+            <ul class="topnav"> 
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="#about__anchor">О нас</a></li>
+                <li><a href="#price__anchor">Цены</a></li>
+                <li><a href="#service__anchor">Схема работы</a></li>
+                <li><a href="#reviews__anchor">Отзывы</a></li>
+                <li><a href="#footer__anchor">Контакты</a></li>
                 <a class="links phone--number" href="tel:+375 (29) 166 52 00">+375(29)166 52 00</a> 
-            </ul> 
-            <a class="icon" href="javascript:void(0);" onclick="myFunction()">&#8803</a>
+            </ul>  
         </nav>
         </div>
         <section class="intro">
@@ -65,7 +77,7 @@
                     </div> -->
                     <h1>Ремонт мобильных телефонов <br> в Минске</h1>
                     <span>Иногда ваши устройства нуждаются в помощи <br> и в этот момент мы будем на страже</span>
-                    <button class="intro__main--button">Заказать звонок</button>
+                    <button class="intro__main--button"  onclick="footerOrderCall()">Заказать звонок</button>
                 </div>
                 
                 <div class="intro__social">
@@ -154,7 +166,7 @@
                     <span>Просто позвоните нам и мы ответим на все интересующие вас вопросы</span>
                 </div>
                 <div>
-                    <button>Заказать звонок</button>
+                    <button onclick="footerOrderCall()">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -234,14 +246,13 @@
             <h2>Как с нами связаться?</h2>
             <div class="footer_wrapper--contacts">
                 <div class="footer__contact">
-                    <!-- <img src="../fix_pls_god/img/icons/logo.svg" alt=""> -->
                     <div class="footer__contact--text">
                         <span>ПН-ПТ 10:00 — 19:00<br>СБ-ВС  12:00 — 18:00</span>
                         <span>г. Минск, пр-т Партизанский, 56, подземный переход</span>
                         <span>+ 375 (29) 166-52-00</span>
                         <span>fiixcomparetion@gmail.com</span>
                     </div>
-                    <button>Заказать звонок</button>
+                    <button  onclick="footerOrderCall()" class="footer__button">Заказать звонок</button>
                 </div>
                 <div id="map">
 
@@ -270,6 +281,24 @@
             </div>
         </div>
     </footer>
+<!-- MODALS -->
+    <div class="modal" id="modalOrder">
+        <div class="modal__dialog">
+            <img onclick="closeModalWindow()" src="../fix_pls_god/img/icons/closeModalOrder.svg" alt="">
+            <p>Оставьте ваш номер телефона и мы перезвоним вам в ближайшее время</p>
+            <input type="text" required placeholder="Ваше имя">
+            <input type="tel" required placeholder="+375-..-.......">
+            <button>Заказать звонок</button>
+        </div>
+    </div>
+    <div class="modal__send--wrapper"  id="footer__close--modal">
+        <div class="modal__send">
+            <span>Ваша заявка получена!</span>
+            <img src="../fix_pls_god/img/icons/check.svg" alt="">
+            <span>Ожидайте звонок нашего специалиста</span>
+            <a href="#" onclick="closeFooterSend()">Вернуться назад</a>
+        </div>
+    </div>
 </body>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=<030d826d-a768-4cff-be5a-aeb4af3f432b>&lang=ru_RU" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
