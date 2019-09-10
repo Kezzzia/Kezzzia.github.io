@@ -710,8 +710,7 @@ ul.topnav{
 .modal__send--wrapper{
     height: 100vh;
     width: 100%;
-    // display: none;
-    // position: fixed;
+    position: fixed;
     background-color: rgba(8, 16, 22, 0.55);
     top: 0;
     left: 0;
@@ -719,7 +718,7 @@ ul.topnav{
     display: flex;
 }
 .modal__send{
-    margin: auto;
+    margin: 60px auto;
     width: 27%;
     height: 65%;
     min-width: 350px;

@@ -33,6 +33,11 @@ function footerOrderCall(){
 function closeModalWindow(){
 	document.getElementById("modalOrder").style.display = "none";
 }
+// функция которая после отправки формы выводит меню и благодарит клиента
+function openModalThanks(){
+	document.getElementById("footer__close--modal").style.display = "block";
+	document.getElementById("modalOrder").style.display = "none";
+}
 
 document.getElementById('close__nav-main').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
