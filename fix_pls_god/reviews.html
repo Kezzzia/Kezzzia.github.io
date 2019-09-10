@@ -73,7 +73,7 @@
                 <div>
                     <span>Васёк Пупкин</span>
                     <span>20.06.2019</span>
-                    <p>Самый лучший сервис.jsfa;djksbf;akdnb;ksdbv;sdbvahsdvbahsdbva Отремонтировали мой старичок-мобильник за 1 день. Еще и сами забрали и привезли. Все круто, все работает. Я счастлив!!! Побольше бы таких ответственных рубят с руками из нужного места.</p>
+                    <p>Самый лучший сервис.jsfa;djksbf;akd nb;ksdbv;sdbv ahsdvbahsdbva Отремонтировали мой старичок-мобильник за 1 день. Еще и сами забрали и привезли. Все круто, все работает. Я счастлив!!! Побольше бы таких ответственных рубят с руками из нужного места.</p>
                 </div>
                 <div>
                     <span>Васёк Пупкин</span>
@@ -131,7 +131,7 @@
                 <button onclick="scrollRewiews()">2</button>
             </div>
             <div class="sendReview">
-                <button id="sendReview">Оставить отзыв</button>
+                <button id="sendReview" onclick="rewiewsOrderCall()">Оставить отзыв</button>
             </div>
             <div  class="rewiews__social">
                     <a class="social__item--footer" href="https://m.facebook.com/Fiix.by/?ref=bookmarks" target="_blank">
@@ -156,6 +156,24 @@
             </div>
         </section>
     </main>
+    <!-- MODALS -->
+    <div class="rewievs__modal" id="rewievs__modal">
+        <div class="rewiews__dialog">
+            <img onclick="rewiewsСloseModalWindow()" src="../fix_pls_god/img/icons/closeModalOrder.svg" alt="">
+            <span>Оставьте ваш отзыв</span>
+            <input type="text" placeholder="Ваше имя">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button onclick="rewiewsOpenModalThanks()">Оставить отзыв</button>
+        </div>
+    </div>
+    <div class="reviews__modal--thanks" id="reviews__modal--thanks">
+        <div class="rewiews__send">
+            <span>Ваш отзыв уcпешно отправлен. Совсем скоро вы его сможете увидеть</span>
+            <img src="../fix_pls_god/img/icons/check.svg" alt="">
+            <span>Спасибо за ваше мнение!</span>
+            <a href="#" onclick="rewiewsCloseFooterSend()">Вернутся назад</a>
+        </div>
+    </div>
 </body>
 <!-- SCRIPTS -->
     <script src="../fix_pls_god/js/index.js"></script>

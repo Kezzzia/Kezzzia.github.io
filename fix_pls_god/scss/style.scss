@@ -657,8 +657,10 @@ ul.topnav{
 }
 .modal__dialog{
     margin: 60px auto;
-    width: 350px;
-    height: 500px;
+    width: 27%;
+    height: 65%;
+    min-width: 350px;
+    max-height: 500px;
     background-color: #504C58;
     display: flex;
     flex-direction: column;

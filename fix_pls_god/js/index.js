@@ -48,6 +48,26 @@ function scrollrewiewback(){
 	document.getElementById("rewiewsFirstPage").style.display = "block";	
 }
 
+// функция которая открывает модальное окно для отзывов
+function rewiewsOrderCall(){
+	document.getElementById("rewievs__modal").style.display = "block";
+}
+// функция которая закрывает окно отзывов
+function rewiewsСloseModalWindow(){
+	document.getElementById("rewievs__modal").style.display = "none";
+}
+// функция которая закрывает меню после отправления отзыва
+function rewiewsOpenModalThanks(){
+	document.getElementById("reviews__modal--thanks").style.display = "block";
+	document.getElementById("rewievs__modal").style.display = "none";
+}
+// функция которая возвращает на главную страницу после закрытия модального окна отзывов
+function rewiewsCloseFooterSend(){
+	document.getElementById("reviews__modal--thanks").style.display="none";
+}
+
+
+
 
 document.getElementById('close__nav-main').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');

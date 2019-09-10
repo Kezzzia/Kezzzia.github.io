@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: gilroy, sans-serif;
-    color: white;
 }
 *,
 *:after,
@@ -117,7 +116,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 900px;
+    // height: 900px;
 }
 section{
     margin-top: 90px;
@@ -210,5 +209,128 @@ section{
     a{
         color: #828282;
         text-decoration: none;
+    }
+}
+// modals
+// ==========================================================================================
+#rewievs__modal{
+    display: none;
+}
+#reviews__modal--thanks{
+    display: none;
+}
+.rewievs__modal{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(8, 16, 22, 0.55);
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    display: flex;
+}
+.rewiews__dialog{
+    margin: 70px auto;
+    width: 27%;
+    height: 65%;
+    min-width: 320px;
+    max-height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
+    span{
+        color: #504C58;
+    }
+    input{
+        color: #504C58;
+        width: 250px;
+        height: 40px;
+        border: 1px solid #E1680F;
+        border-radius: 50px;
+        outline: none;
+        font-size: 20px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    button{
+        color: #fff;
+        background-color: #E1680F;
+        width: 250px;
+        height: 40px;
+        border: 1px solid #E1680F;
+        border-radius: 50px;
+        outline: none;
+        font-size: 20px;
+        &:hover{
+            background-color: #fff;
+            color: #504C58;
+            cursor: pointer;
+        }
+    }
+    textarea{
+        outline: none;
+        width: 250px;
+        border-radius: 30px;
+        border: 1px solid #E1680F;
+        padding: 15px;
+        color: #504C58;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+.reviews__modal--thanks{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(8, 16, 22, 0.55);
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    display: flex;
+}
+.rewiews__send{
+    margin: 70px auto;
+    width: 27%;
+    height: 65%;
+    min-width: 320px;
+    max-height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
+    span{
+        width: 70%;
+        color: #504C58;
+    }
+    a{
+        color: #fff;
+        background-color: #E1680F;
+        width: 250px;
+        height: 40px;
+        border: 1px solid #E1680F;
+        border-radius: 50px;
+        outline: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        &:hover{
+            background-color: #fff;
+            color: #504C58;
+            cursor: pointer;
+        }
     }
 }
