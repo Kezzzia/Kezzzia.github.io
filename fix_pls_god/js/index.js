@@ -38,6 +38,16 @@ function openModalThanks(){
 	document.getElementById("footer__close--modal").style.display = "block";
 	document.getElementById("modalOrder").style.display = "none";
 }
+// функция которая перелистывает страницы в отзывах
+function scrollRewiews(){
+	document.getElementById("rewiewsFirstPage").style.display = "none";
+	document.getElementById("rewiewsSecondPage").style.display = "block";
+}
+function scrollrewiewback(){
+	document.getElementById("rewiewsSecondPage").style.display = "none";
+	document.getElementById("rewiewsFirstPage").style.display = "block";	
+}
+
 
 document.getElementById('close__nav-main').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');

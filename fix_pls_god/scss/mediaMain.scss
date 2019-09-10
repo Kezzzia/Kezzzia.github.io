@@ -50,7 +50,15 @@
     }
 }
 @media (max-width:992px){
-    
+    // 
+    .sendReview{
+        text-align: center;
+    }
+    .rewiews__footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    // 
     .nav__wrapper {
         visibility: hidden;
     }
