@@ -27,6 +27,9 @@
         display: none;
     }
     //
+    .price__main--container{
+        min-height: 1640px;
+    }
 
 }
 @media (min-width:568px){
@@ -41,6 +44,9 @@
     .call a{
         display: none;
     }
+    .price__main--container{
+        min-height: 1550px;
+    }
 }
 @media (min-width:992px){
     .mobile__nav a{
@@ -51,6 +57,9 @@
     }
     .nav__container{
         max-width: 992px;
+    }
+    .price__main--container{
+        min-height: 1400px;
     }
 }
 @media (max-width:992px){

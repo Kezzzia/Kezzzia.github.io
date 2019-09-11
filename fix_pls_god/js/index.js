@@ -118,6 +118,12 @@ function priceOpenModalThanks(){
 function priceCloseSend(){
 	document.getElementById("price__close--modal").style.display="none";
 }
+// переключатели прайса
+ function toogleSony(){
+	 document.getElementById("price__Sony").style.display = "block";
+	 document.getElementById("price__Apple").style.display = "none";
+	 document.getElementById("price__Samsung").style.display = "none";
+ }
 //////////////////////////////
 
 

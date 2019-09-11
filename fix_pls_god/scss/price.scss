@@ -129,7 +129,8 @@ section{
         padding: 10px 0;
     }
 }
-// 
+// Price
+// ==========================================================================================
 .price__column{
     display: flex;
 }
@@ -143,6 +144,7 @@ section{
     display: flex;
     flex-direction: column;
     margin-right: 40px;
+    margin-top: 45px;
     a{
         text-decoration-line: none;
         color: #C4C4C4;
@@ -162,10 +164,40 @@ section{
     }  
 }
 .price__right--column{
-
+    width: 100%;
 }
 .price__main--container{
-
+    box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
+    margin-bottom: 70px;
+    // min-height: 1560px;
+    h6{
+        color: #D4E1F4;
+        font-size: 20px;
+        margin: 30px 0;
+        padding: 40px 40px;
+        font-weight: 400;
+    }
+    span{
+        color: #D4E1F4;
+        font-weight: 200;
+        border-bottom: 1px solid #D4E1F4;
+        width: 100%;
+        text-align: right;
+        font-size: 14px;
+    &:nth-child(1){
+        text-align: left;
+    }
+    }
+    div{
+        div{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            &:not:first-child{
+                justify-content: flex-end;
+        }
+    }
+    }
 }
 // 
 .price__questions{
@@ -232,7 +264,14 @@ section{
         }
     }
 }
-
+// toggle Price
+// ==========================================================================================
+#price__Samsung{
+    // display: none;
+}
+#price__Sony{
+    display: none;
+}
 // modal
 // ==========================================================================================
 .modal{
