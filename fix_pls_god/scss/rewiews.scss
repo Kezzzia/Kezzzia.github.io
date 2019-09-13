@@ -1,47 +1,17 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: gilroy, sans-serif;
-}
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-}
 // imports variables components
 ////////////////////////////////////////////////////////////////////////////////////////////
-@import "mediaMain";
+@import "mediaMain"; 
 @import "mixinsMain";
 @import "_navigationComponents.scss";
-/////////////////////////////////////////////////////////////////////////////////////////////
-.nav__wrapper{
-    display: flex;
-    justify-content: center;
-    background-color: #504C58;
-    height: 60px;
-    position: fixed;
-    width: 100%;
-}
-.call{
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    a{
-        background: url(../img/icons/call.svg);
-        height: 70px;
-        width: 70px;
-    }
-}
+@import "_bodyStyleComponents.scss";
+@import "_modalWindows.scss";
+@import "_socialIcon.scss";
 // Main
 /////////////////////////////////////////////////////////////////////////////////////////////
 main{
     width: 100%;
     display: flex;
     justify-content: center;
-    // height: 900px;
 }
 section{
     margin-top: 90px;
@@ -104,29 +74,6 @@ section{
         cursor: pointer;
     }
 }
-.rewiews__social{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-}
-.social__item--footer{
-    width: 40px;
-    height: 40px;
-    margin: 0 15px;
-    @include flex__center;
-    fill: #504C58;
-    box-shadow: 5px 5px 18px rgba(8, 16, 22, 0.5);
-    border-radius: 50%;
-    &:hover{
-        fill: #611414;
-        transition: .1s linear;
-        cursor: pointer;
-    }
-    svg{
-        height: 35px;
-    }
-}
 .rewiews__footer{
     padding: 20px 0;
     width: 100%;
@@ -148,118 +95,5 @@ section{
 }
 #reviews__modal--thanks{
     display: none;
-}
-.rewievs__modal{
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(8, 16, 22, 0.55);
-    top: 0;
-    left: 0;
-    z-index: 5000;
-    display: flex;
-}
-.rewiews__dialog{
-    margin: 70px auto;
-    width: 27%;
-    height: 65%;
-    min-width: 320px;
-    max-height: 500px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
-    span{
-        color: #504C58;
-    }
-    input{
-        color: #504C58;
-        width: 250px;
-        height: 40px;
-        border: 1px solid #E1680F;
-        border-radius: 50px;
-        outline: none;
-        font-size: 20px;
-        padding: 0 15px;
-        text-align: center;
-    }
-    button{
-        color: #fff;
-        background-color: #E1680F;
-        width: 250px;
-        height: 40px;
-        border: 1px solid #E1680F;
-        border-radius: 50px;
-        outline: none;
-        font-size: 20px;
-        &:hover{
-            background-color: #fff;
-            color: #504C58;
-            cursor: pointer;
-        }
-    }
-    textarea{
-        outline: none;
-        width: 250px;
-        border-radius: 30px;
-        border: 1px solid #E1680F;
-        padding: 15px;
-        color: #504C58;
-    }
-    img{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}
-.reviews__modal--thanks{
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(8, 16, 22, 0.55);
-    top: 0;
-    left: 0;
-    z-index: 5000;
-    display: flex;
-}
-.rewiews__send{
-    margin: 70px auto;
-    width: 27%;
-    height: 65%;
-    min-width: 320px;
-    max-height: 500px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
-    span{
-        width: 70%;
-        color: #504C58;
-    }
-    a{
-        color: #fff;
-        background-color: #E1680F;
-        width: 250px;
-        height: 40px;
-        border: 1px solid #E1680F;
-        border-radius: 50px;
-        outline: none;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        &:hover{
-            background-color: #fff;
-            color: #504C58;
-            cursor: pointer;
-        }
-    }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////

@@ -12,6 +12,14 @@
         z-index: 2700;
     }
 }
+.nav__wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #504C58;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
 ul.topnav {
     width: 100%;
     display: flex;
@@ -72,6 +80,20 @@ ul.topnav{
         background: url(../img/icons/menu.svg);
         height: 70px;
         width: 70px; 
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
+.call{
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    a{
+        background: url(../img/icons/call.svg);
+        height: 70px;
+        width: 70px;
     }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
