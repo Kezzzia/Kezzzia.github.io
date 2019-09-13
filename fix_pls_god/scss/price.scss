@@ -8,95 +8,12 @@ body{
 *:before {
     box-sizing: border-box;
 }
-// imports
-// ==========================================================================================
+// imports variables and components
+/////////////////////////////////////////////////////////////////////////////////////////////
 @import "mediaMain";
 @import "mixinsMain";
-// navigation
-// ==========================================================================================
-.nav__wrapper{
-    display: flex;
-    justify-content: center;
-    background-color: #504C58;
-    height: 60px;
-    position: fixed;
-    width: 100%;
-}
-.nav__container {
-    min-width: 85%;
-    height: 60px;
-    background-color: #504C58;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 10;
-    a{
-        z-index: 2700;
-    }
-}
-ul.topnav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-ul.topnav{
-    li a {
-        @include links;
-        font-size: 16px;
-        font-weight: 300;
-        color: #C4C4C4;
-        padding: 15px 16px;
-    }
-    li a:hover {
-        color: #D4E1F4;
-        border-bottom: 1px solid #D4E1F4;
-        transition: .1s linear;
-    }
-    a.links{
-        color: #FE9C55;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    a.links:hover{
-        color: #D4E1F4;
-    }
-}
-.responsive{
-    background-color: #504C58;
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    top: 70px;
-    transition: 0.3s;
-}
-.mobile__nav{
-    width: 100%;
-    top: 0;
-    right: 0;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    .x{
-        background: url(../img/icons/menu.svg);
-        height: 70px;
-        width: 70px; 
-    }
-}
-.mobile__nav--responsive{
-    background-color: #504C58;
-    width: 100%;
-    transition: .3s;
-    .x{
-        background: url(../img/icons/menu.svg);
-        height: 70px;
-        width: 70px; 
-    }
-}
+@import "_navigationComponents.scss";
+/////////////////////////////////////////////////////////////////////////////////////////////
 .call{
     width: 100%;
     right: 0;
@@ -111,7 +28,7 @@ ul.topnav{
     }
 }
 // navigation
-// ==========================================================================================
+/////////////////////////////////////////////////////////////////////////////////////////////
 main{
     width: 100%;
     display: flex;
@@ -127,10 +44,11 @@ section{
     span{
         color: #D4E1F4;
         padding: 10px 0;
+        font-size: $fz__h2;
     }
 }
 // Price
-// ==========================================================================================
+/////////////////////////////////////////////////////////////////////////////////////////////
 .price__column{
     display: flex;
 }
@@ -153,6 +71,7 @@ section{
         border: 1px solid #46434C;
         padding: 20px 50px;
         border-bottom: none;
+        font-size: $fz__h4;
         &:nth-child(10){
             border-bottom: 1px solid #46434C;
         }
@@ -169,7 +88,6 @@ section{
 .price__main--container{
     box-shadow: 1px 1px 38px rgba(8, 16, 22, 0.5);
     margin-bottom: 70px;
-    // min-height: 1560px;
     h6{
         color: #D4E1F4;
         font-size: 20px;
@@ -199,12 +117,15 @@ section{
     }
     }
 }
-// 
+/////////////////////////////////////////////////////////////////////////////////////////////
 .price__questions{
     span{
-        padding: 10px 0;
+        padding: 20px 0;
+        font-size: 20px;
     }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////
+
 .price__btn--call{
     button{
         width: 170px;
@@ -225,6 +146,7 @@ section{
     }
     }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////
 .rewiews__social{
     width: 100%;
     display: flex;
@@ -248,6 +170,7 @@ section{
         height: 35px;
     }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////
 .rewiews__footer{
     padding: 20px 0;
     width: 100%;
@@ -255,6 +178,7 @@ section{
     justify-content: space-between;
     span{
         color: #C4C4C4;
+        font-size: 18px;
     }
     a{
         color: #C4C4C4;
@@ -265,7 +189,7 @@ section{
     }
 }
 // toggle Price
-// ==========================================================================================
+/////////////////////////////////////////////////////////////////////////////////////////////
 #price__Samsung{
     // display: none;
 }
@@ -273,7 +197,7 @@ section{
     display: none;
 }
 // modal
-// ==========================================================================================
+/////////////////////////////////////////////////////////////////////////////////////////////
 .modal{
     height: 100vh;
     width: 100%;
@@ -394,3 +318,4 @@ section{
 #footer__close--modal{
     display: none;
 }
+/////////////////////////////////////////////////////////////////////////////////////////////

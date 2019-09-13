@@ -14,8 +14,6 @@ function init(){
 
 	map.geoObjects.add(placemark);
 }
-
-
 /////////////////////////////---HOME
 // функция которая меняет классы при открытии адаптивного меню
 function myFunction() {
@@ -124,9 +122,4 @@ function priceCloseSend(){
 	 document.getElementById("price__Apple").style.display = "none";
 	 document.getElementById("price__Samsung").style.display = "none";
  }
-//////////////////////////////
-
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////////////////////
