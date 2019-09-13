@@ -30,26 +30,10 @@
     .price__btn--call{
         display: none;
     }
-    //
-    .price__main--container{
-        min-height: 1640px;
-    }
-
 }
 @media (min-width:568px){
-    .intro__text{
-    h1{
-        font-size: 3.7vw;
-    }
-    span{
-        font-size: 2.2vw;
-    }
-    }
     .call a{
         display: none;
-    }
-    .price__main--container{
-        min-height: 1550px;
     }
 }
 @media (min-width:992px){
@@ -66,23 +50,8 @@
     .icon{
         display: none;
     }
-    .nav__container{
-        max-width: 992px;
-    }
-    .price__main--container{
-        min-height: 1400px;
-    }
-}
-@media (max-width:1202px){
-    .main{
-        min-height: 900px;
-    }
 }
 @media (max-width:992px){
-    //
-    .main{
-        min-height: 1800px;
-    }
     .main__content div {
         flex-direction: column;
     }
@@ -126,10 +95,6 @@
         display: block;
         text-align: left;
     }
-    //
-    .price{
-        min-height: 800px;
-    }
     .price__footer button{
         display: none;
     }
@@ -140,25 +105,12 @@
     .price__container{
        min-width: 100%;
     }
-    //
-    .service{
-        min-height: 1970px;
-    }
     .service__block--wrapper{
         flex-wrap: wrap;
         height: 90%;
     }
-    //
-    .reviews{
-        min-height: 1790px;
-    }
     .reviews__block--wrapper{
         flex-wrap: wrap;
-        height: 90%;
-    }
-    //
-    .footer{
-        min-height: 1200px;
     }
     .footer__contact{
         min-height: 350px;
@@ -175,12 +127,3 @@
         height: 50px;
     }
 }
-
-///4k display////
-////////////////////////////////////////////////////////////////////////////////////////////
-@media (min-width:1441px){
-    .service, .reviews, .price, .footer, .main, header{
-        max-height: 800px;
-    }
-}
-/////////////////////////////////////////////////////////////////////////////////////////////
