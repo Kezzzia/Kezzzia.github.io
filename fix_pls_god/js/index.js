@@ -19,8 +19,8 @@ function init(){
 /////////////////////////////---HOME
 // функция которая меняет классы при открытии адаптивного меню
 function myFunction() {
-	var y = document.getElementById("responsive__mobile");
-    var x = document.getElementById("myTopnav");
+	let y = document.getElementById("responsive__mobile");
+    let x = document.getElementById("myTopnav");
 	x.classList.toggle("responsive");
 	y.classList.toggle("mobile__nav--responsive");
 }
