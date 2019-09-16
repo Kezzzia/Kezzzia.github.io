@@ -7,9 +7,11 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 10;
     a{
         z-index: 2700;
+        img{
+            height: 50px;
+        }
     }
 }
 .nav__wrapper{
@@ -19,6 +21,8 @@
     height: 60px;
     position: fixed;
     width: 100%;
+    z-index: 9999;
+
 }
 ul.topnav {
     width: 100%;
@@ -28,6 +32,7 @@ ul.topnav {
     list-style: none;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 ul.topnav{
     li a {
@@ -66,6 +71,7 @@ ul.topnav{
     position: fixed;
     display: flex;
     justify-content: flex-end;
+    z-index: 9999;
     .x{
         background: url(../img/icons/menu.svg);
         height: 70px;
@@ -90,6 +96,7 @@ ul.topnav{
     position: fixed;
     display: flex;
     justify-content: flex-end;
+    z-index: 10000;
     a{
         background: url(../img/icons/call.svg);
         height: 70px;

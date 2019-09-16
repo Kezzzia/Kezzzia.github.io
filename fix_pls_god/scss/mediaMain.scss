@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////////////////
-@media (min-width:568px){
+@media (min-width:900px){
     .call a{
         display: none;
     }
@@ -9,6 +9,9 @@
     .intro__main--button{
         display: none;
     }
+    .service__block--item{
+        flex-direction: column;
+}
     #left__column{
         display: none;
     }
@@ -16,7 +19,7 @@
         flex-direction: column;
         min-height: 390px;
     }
-    .intro__social{
+    .social__intro{
         display: flex;
         justify-content: space-around;
     }
@@ -24,15 +27,28 @@
         text-align: center;
         min-height: 270px;
     }
-    .main__content{
-        div{
-            div{
-                min-width: 250px;
-            }
-        }
-    }
     .footer__wrapper div:nth-child(2){
         flex-direction: column;
+    }
+    .footer__button{
+        display: none;
+    }
+        .price__footer button{
+        display: none;
+    }
+    .price__btn--call{
+        display: none;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen and (max-height:567px) and (min-width: 568px){
+    .intro__main--button{
+            display: none;
+    }
+    .price__footer button{
+        display: none;
     }
     .footer__button{
         display: none;
@@ -43,25 +59,19 @@
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width:992px){
-    .main__content{
-        div{
-            div{
-                max-width: 320px;
-            }
-        }
-    }
     .mobile__nav a{
         display: none;
     }
     .icon{
         display: none;
     }
+    .service__block--item{
+        flex-direction: column;
+}
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width:992px){
-    .main__content div {
-        flex-direction: column;
-    }
+
     .price__questions{
         text-align: center;
     }
@@ -99,9 +109,6 @@
     ul.topnav.responsive li a {
         display: block;
         text-align: left;
-    }
-    .price__footer button{
-        display: none;
     }
     .price__footer{
         flex-direction: column;

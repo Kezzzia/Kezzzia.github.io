@@ -74,7 +74,7 @@ section{
         border-bottom: 1px solid #D4E1F4;
         width: 100%;
         text-align: right;
-        font-size: 14px;
+        font-size: $fz__h4;
     &:nth-child(1){
         text-align: left;
     }
@@ -89,6 +89,9 @@ section{
         }
     }
     }
+}
+.price__last--block{
+    padding-bottom: 50px;
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
 .price__questions{
@@ -119,6 +122,10 @@ section{
     }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
+.price__social{
+    display: flex;
+    justify-content: center;
+}
 .rewiews__footer{
     padding: 20px 0;
     width: 100%;
@@ -126,7 +133,7 @@ section{
     justify-content: space-between;
     span{
         color: #C4C4C4;
-        font-size: 18px;
+        font-size: 12px;
     }
     a{
         color: #C4C4C4;
@@ -138,11 +145,8 @@ section{
 }
 // toggle Price
 /////////////////////////////////////////////////////////////////////////////////////////////
-#price__Samsung{
+#priceApple{
     // display: none;
-}
-#price__Sony{
-    display: none;
 }
 // modal
 /////////////////////////////////////////////////////////////////////////////////////////////

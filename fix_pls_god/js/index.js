@@ -5,7 +5,8 @@ function init(){
 		center: [53.874421975668085,27.63028032552346],
 		zoom: 17,
 		controls: ['zoomControl'],
-		behaviors: ['drag']
+		behaviors: ['drag', 'multiTouch'],
+		// behaviors:disable['drag']
 	});
 
 	var placemark = new ymaps.Placemark([53.874421975668085,27.63028032552346],{
@@ -117,9 +118,6 @@ function priceCloseSend(){
 	document.getElementById("price__close--modal").style.display="none";
 }
 // переключатели прайса
- function toogleSony(){
-	 document.getElementById("price__Sony").style.display = "block";
-	 document.getElementById("price__Apple").style.display = "none";
-	 document.getElementById("price__Samsung").style.display = "none";
- }
-/////////////////////////////////////////////////////////////////////////////////////////////
+document.getElementById("aaa").onclick = function(){
+	document.getElementById("priceApple").style.display = "none";
+}

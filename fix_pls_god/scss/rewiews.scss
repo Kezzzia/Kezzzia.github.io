@@ -74,6 +74,10 @@ section{
         cursor: pointer;
     }
 }
+.rewiews__social{
+    display: flex;
+    justify-content: center;
+}
 .rewiews__footer{
     padding: 20px 0;
     width: 100%;
@@ -81,7 +85,7 @@ section{
     justify-content: space-between;
     color: #828282;
     span{
-        font-size: 18px;
+        font-size: 12px;
     }
     a{
         color: #828282;

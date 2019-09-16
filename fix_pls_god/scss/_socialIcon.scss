@@ -1,17 +1,16 @@
 .social__item {
-    width: 140px;
-    height: 140px;
-    padding: 15px;
+    width: 40px;
+    height: 40px;
     @include flex__center;
-    fill: #000000;
-    box-shadow: 5px 5px 18px rgba(8, 16, 22, 0.5);
+    fill: #D4E1F4;
+    margin: 15px 15px;
     border-radius: 50%;
     &:hover{
-        fill: #f2f2f2;
+        fill: #FA8A37;
         transition: .1s linear;
         cursor: pointer;
     }
     svg{
-        height: 65px;
+        height: 35px;
     }
 }
