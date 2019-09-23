@@ -6,7 +6,6 @@ function init(){
 		zoom: 17,
 		controls: ['zoomControl'],
 		behaviors: ['drag', 'multiTouch'],
-		// behaviors:disable['drag']
 	});
 
 	var placemark = new ymaps.Placemark([53.874421975668085,27.63028032552346],{
