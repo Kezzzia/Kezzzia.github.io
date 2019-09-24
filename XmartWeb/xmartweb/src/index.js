@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-// import LikeButton from 'like-button'
+import BookNow from './sharedComponents/bookNow';
+import HeaderOfferClients from './componentsOfferClients/headerOfferClients';
 
-const LikeButton = () => {
+const WebOfferClientView = () => {
 
     return (
     <div>
+        <HeaderOfferClients />
         sdhfsdjfsd
-        dfkjabdkfjasdn
+        dfkjabdkfjasdvsvsvn
         ansdfjansdjfn
+        fdsd
+        <BookNow />
     </div>
     );
 }
 
-ReactDom.render(<LikeButton />, document.getElementById('root'));
+ReactDom.render(<WebOfferClientView />, document.getElementById('root'));
