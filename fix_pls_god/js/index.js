@@ -116,7 +116,4 @@ function priceOpenModalThanks(){
 function priceCloseSend(){
 	document.getElementById("price__close--modal").style.display="none";
 }
-// переключатели прайса
-document.getElementById("aaa").onclick = function(){
-	document.getElementById("priceApple").style.display = "none";
-}
+

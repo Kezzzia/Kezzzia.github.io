@@ -36,15 +36,17 @@ section{
     flex-direction: column;
     margin-right: 40px;
     margin-top: 45px;
-    a{
+    button{
         text-decoration-line: none;
         color: #C4C4C4;
+        background-color: #504C58;
         text-transform: uppercase;
         text-align: center;
         border: 1px solid #46434C;
         padding: 20px 50px;
         border-bottom: none;
         font-size: $fz__h4;
+        outline: none;
         &:nth-child(10){
             border-bottom: 1px solid #46434C;
         }
@@ -142,11 +144,6 @@ section{
             color: #FA8A37;
         }
     }
-}
-// toggle Price
-/////////////////////////////////////////////////////////////////////////////////////////////
-#priceApple{
-    // display: none;
 }
 // modal
 /////////////////////////////////////////////////////////////////////////////////////////////

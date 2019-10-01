@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../fix_pls_god/css/price.css">
+    <!-- SCRIPTS -->
+    <script src="../fix_pls_god/js/index.js"></script>
+    <!-- <script src="../fix_pls_god/js/flex.js"></script> -->
     <title>Fiix.by- Ремонт телефонов</title>
 </head>
 <body>
@@ -71,21 +74,21 @@
         <section>
             <div class="price__column">
                 <div class="price__left--column" id="left__column">
-                    <input type="button" value="Apple" id="aaa">
-                    <a href="../fix_pls_god/price.html" id="">Samsung</a>
-                    <button onclick="toogleSony()">Sony</button>
-                    <a href="../fix_pls_god/price.html">Nokia</a>
-                    <a href="../fix_pls_god/price.html">Meizu</a>
-                    <a href="../fix_pls_god/price.html">Huawei</a>
-                    <a href="../fix_pls_god/price.html">Xiaomi</a>
-                    <a href="../fix_pls_god/price.html">Lenovo</a>
-                    <a href="../fix_pls_god/price.html">LG</a>
-                    <a href="../fix_pls_god/price.html">Nokia</a>
+                    <button class="tab" data='1'>Apple</button>
+                    <button class="tab" data='2'>Samsung</button>
+                    <button class="tab" data='3'>Xiaomi</button>
+                    <button class="tab" data='4'>Meizu</button>
+                    <button class="tab" data='5'>Huawei</button>
+                    <button class="tab" data='6'>LG</button>
+                    <button class="tab" data='7'>OnePlus</button>
+                    <button class="tab" data='8'>Sony</button>
+                    <button class="tab" data='9'>Lenovo</button>
+                    <button class="tab" data='10'>Nokia</button>
                 </div>
                 
 <!--  Price Apple -->
                 <div class="price__right--column">
-                    <div id="priceApple">
+                    <div class="tab-body" data ="1">
                             <span>Цены Apple</span>
                             <div class="price__main--container" >
                                 <div>
@@ -207,7 +210,7 @@
 
 <!--  Price Samsung -->
 
-                    <div id="priceSamsung">
+                    <div class="tab-body"data ="2">
                             <span>Цены Samsung</span>
                             <div class="price__main--container" >
                                 <div>
@@ -329,7 +332,7 @@
 
 <!--  Price Sony -->
 
-<div id="priceSony">
+<div class="tab-body" data ="8">
         <span>Цены Sony</span>
         <div class="price__main--container" >
             <div>
@@ -449,6 +452,863 @@
         </div>
 </div> <!-- end price Sony -->
 
+<div class="tab-body" data ="3">
+    <span>Цены Xiaomi</span>
+    <div class="price__main--container" >
+        <div>
+            <h6>Ремонт любой сложности</h6>
+            <div>
+                <span>Замена разъема (не заряжается)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена динамика (я не слышу собеседника)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена полифонического динамика (я не слышу звонок)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена микрофона (меня не слышит собеседник)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена кнопок (вкл +/-)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Не видит sim</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Программный ремонт</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div>
+            <h6>Замена стекла</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div class="price__last--block">
+            <h6>Замена ЖКИ модуля</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+    </div>
+</div> <!-- end price Xiaomi -->
+
+
+
+
+<div class="tab-body" data ="4">
+    <span>Цены Meizu</span>
+    <div class="price__main--container" >
+        <div>
+            <h6>Ремонт любой сложности</h6>
+            <div>
+                <span>Замена разъема (не заряжается)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена динамика (я не слышу собеседника)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена полифонического динамика (я не слышу звонок)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена микрофона (меня не слышит собеседник)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена кнопок (вкл +/-)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Не видит sim</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Программный ремонт</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div>
+            <h6>Замена стекла</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div class="price__last--block">
+            <h6>Замена ЖКИ модуля</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+    </div>
+</div> <!-- end price Meizu -->
+
+
+
+
+<div class="tab-body" data ="5">
+    <span>Цены Huawei</span>
+    <div class="price__main--container" >
+        <div>
+            <h6>Ремонт любой сложности</h6>
+            <div>
+                <span>Замена разъема (не заряжается)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена динамика (я не слышу собеседника)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена полифонического динамика (я не слышу звонок)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена микрофона (меня не слышит собеседник)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена кнопок (вкл +/-)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Не видит sim</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Программный ремонт</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div>
+            <h6>Замена стекла</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div class="price__last--block">
+            <h6>Замена ЖКИ модуля</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+    </div>
+</div> <!-- end price Huawei -->
+
+
+
+
+<div class="tab-body" data ="6">
+    <span>Цены LG</span>
+    <div class="price__main--container" >
+        <div>
+            <h6>Ремонт любой сложности</h6>
+            <div>
+                <span>Замена разъема (не заряжается)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена динамика (я не слышу собеседника)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена полифонического динамика (я не слышу звонок)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена микрофона (меня не слышит собеседник)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена кнопок (вкл +/-)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Не видит sim</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Программный ремонт</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div>
+            <h6>Замена стекла</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div class="price__last--block">
+            <h6>Замена ЖКИ модуля</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+    </div>
+</div> <!-- end price LG -->
+
+
+
+<div class="tab-body" data ="7">
+    <span>Цены OnePlus</span>
+    <div class="price__main--container" >
+        <div>
+            <h6>Ремонт любой сложности</h6>
+            <div>
+                <span>Замена разъема (не заряжается)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена динамика (я не слышу собеседника)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена полифонического динамика (я не слышу звонок)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена микрофона (меня не слышит собеседник)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена кнопок (вкл +/-)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Не видит sim</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Программный ремонт</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div>
+            <h6>Замена стекла</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div class="price__last--block">
+            <h6>Замена ЖКИ модуля</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+    </div>
+</div> <!-- end price ONE PLUS -->
+
+
+<div class="tab-body" data ="9">
+    <span>Цены Lenovo</span>
+    <div class="price__main--container" >
+        <div>
+            <h6>Ремонт любой сложности</h6>
+            <div>
+                <span>Замена разъема (не заряжается)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена динамика (я не слышу собеседника)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена полифонического динамика (я не слышу звонок)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена микрофона (меня не слышит собеседник)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена кнопок (вкл +/-)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Не видит sim</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Программный ремонт</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div>
+            <h6>Замена стекла</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div class="price__last--block">
+            <h6>Замена ЖКИ модуля</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+    </div>
+</div> <!-- end price Lenovo -->
+
+
+
+
+<div class="tab-body" data ="10">
+    <span>Цены Nokia</span>
+    <div class="price__main--container" >
+        <div>
+            <h6>Ремонт любой сложности</h6>
+            <div>
+                <span>Замена разъема (не заряжается)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена динамика (я не слышу собеседника)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена полифонического динамика (я не слышу звонок)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена микрофона (меня не слышит собеседник)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Замена кнопок (вкл +/-)</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Не видит sim</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>Программный ремонт</span>
+                <span>от 25 руб	</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div>
+            <h6>Замена стекла</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 160 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+        <div class="price__last--block">
+            <h6>Замена ЖКИ модуля</h6>
+            <div>
+                <span>iPhone 5, 5s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 6s</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 5SE</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+            <div>
+                <span>iPhone 7 PLUS</span>
+                <span>от 85 руб</span>
+                <span>от 30 мин</span>
+            </div>
+        </div>
+    </div>
+</div> <!-- end price Nokia -->
+
+
+
                     <div class="price__questions">
                         <span>Остались вопросы?</span><br>
                         <span>Позвоните и наш специалист проконсультирует вас по любому вопросу</span>
@@ -477,7 +1337,7 @@
             </div>
 
             <div class="rewiews__footer">
-                <span>© 2019 Fiix.by | Все права защищены | УНП 123456789</span>
+                <span>© 2019 Fiix.by | Все права защищены | УНП 193095883</span>
                 <span>Developed <a href="#">FEAUTURUM</a></span>
             </div>
 <!-- MODALS -->
@@ -501,7 +1361,6 @@
         </section>
     </main>
 </body>
-<!-- SCRIPTS -->
-    <script src="../fix_pls_god/js/index.js"></script>
+<script src="../fix_pls_god/js/flex.js"></script>
 
 </html>
