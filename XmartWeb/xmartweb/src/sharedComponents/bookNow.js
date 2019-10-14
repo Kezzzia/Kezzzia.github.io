@@ -7,7 +7,7 @@ const StyleButton = styled.div`
     bottom: 0;
     position: fixed;
     font-size: calc(1rem + .3vw);
-    padding: 0.5em;
+    padding: 0.5em 0;
     text-align: center;
     background-color: #239dff;
 `;

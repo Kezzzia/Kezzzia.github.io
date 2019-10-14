@@ -1,19 +1,22 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import styled from 'styled-components';
 import BookNow from './sharedComponents/bookNow';
 import HeaderOfferClients from './componentsOfferClients/headerOfferClients';
+import AboutAdviser from './componentsOfferClients/aboutAdvisor';
+
+const Wrapper = styled.div`
+    width: 100%;
+`;
 
 const WebOfferClientView = () => {
 
     return (
-    <div>
+    <Wrapper>
         <HeaderOfferClients />
-        sdhfsdjfsd
-        dfkjabdkfjasdvsvsvn
-        ansdfjansdjfn
-        fdsd
+        <AboutAdviser />
         <BookNow />
-    </div>
+    </Wrapper>
     );
 }
 
