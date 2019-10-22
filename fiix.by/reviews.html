@@ -202,6 +202,7 @@ function rewiewsOrderCall(){
 function rewiewsСloseModalWindow(){
 	document.getElementById("rewievs__modal").style.display = "none";
 }
+
 // функция которая закрывает меню после отправления отзыва
 function rewiewsOpenModalThanks(){
 	document.getElementById("reviews__modal--thanks").style.display = "block";
@@ -237,7 +238,10 @@ document.getElementById('close__nav-footer').onclick = function() {
 	document.getElementById('myTopnav').classList.remove('responsive');
 	document.getElementById('responsive__mobile').classList.remove('mobile__nav--responsive');
 }
-/////////////////////////////
+
+document.onkeydown = function(event){
+    if(event.keyCode == 27) rewiewsСloseModalWindow();
+}
     </script>
 
 </html>

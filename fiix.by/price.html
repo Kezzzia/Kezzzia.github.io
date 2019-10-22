@@ -1397,6 +1397,7 @@ function priceOrderCall(){
 function priceFooterSend(){
 	document.getElementById("priceModalOrder").style.display="none";
 }
+
 // функция которая после отправки формы выводит меню и благодарит клиента (price)
 function priceOpenModalThanks(){
 	document.getElementById("price__close--modal").style.display = "block";
@@ -1440,6 +1441,10 @@ function myFunction() {
 	x.classList.toggle("responsive");
 	y.classList.toggle("mobile__nav--responsive");
 }
+document.onkeydown = function(event){
+    if(event.keyCode == 27) priceFooterSend();
+}
+
 </script>
 
 </html>

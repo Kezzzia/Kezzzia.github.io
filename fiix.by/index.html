@@ -357,6 +357,10 @@ function footerOrderCall(){
 function closeModalWindow(){
 	document.getElementById("modalOrder").style.display = "none";
 }
+document.onkeydown = function(event){
+    if(event.keyCode == 27) closeModalWindow();
+}
+
 // функция которая после отправки формы выводит меню и благодарит клиента
 function openModalThanks(){
 	document.getElementById("footer__close--modal").style.display = "block";
