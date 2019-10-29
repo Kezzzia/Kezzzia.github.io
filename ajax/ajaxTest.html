@@ -7,11 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="back.php" method="POST">
+    <form>
         <p>Name:<input type="text" name="fname"></p>
         <p>Last Name:<input type="text" name="lname"></p>
         <input type="submit" value="send">
     </form>
+    <!-- <script src="/ajax/ajaxTest.js"></script> -->
+    <script>
+    let xhttp = new XMLHttpRequest();
+xhttp.open('post', 'back.php', true);
+xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhttp.send('name=vasia');
 
+xhttp.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
+        console.log(this);
+    }
+}
+    </script>
 </body>
 </html>
