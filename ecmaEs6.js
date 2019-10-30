@@ -60,4 +60,4 @@ const template = `
     ${isVisible() ? `<p>Visible</p>` : ' '}
     <h1 id='root' style = 'color: red'>${title}</h1>
 `
-console.log(template + 'hi hi hi' + 888 + 'new branch' + 777 + 'say hello');
+console.log(template + 'hi hi hi' + 888 + 'new branch' + 777 + 'say hello'+ 88 + 99 +100);
